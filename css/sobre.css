@@ -1,0 +1,156 @@
+.sobre-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 8%;
+    background: linear-gradient(180deg, #f5f5f7, #ffffff);
+}
+
+.sobre-hero-texto {
+    max-width: 850px;
+}
+
+.mini-titulo {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0071e3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+.sobre-hero h1 {
+    font-size: 3rem;
+    color: #1d1d1f;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.sobre-hero p:last-child {
+    font-size: 1.02rem;
+    color: #6e6e73;
+    line-height: 1.8;
+}
+
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    padding: 70px 8%;
+    background-color: #ffffff;
+}
+
+.bloco-sobre {
+    background: #f5f5f7;
+    border-radius: 22px;
+    padding: 30px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.bloco-sobre:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+}
+
+.bloco-sobre h2 {
+    font-size: 1.4rem;
+    color: #1d1d1f;
+    margin-bottom: 14px;
+}
+
+.bloco-sobre p {
+    color: #6e6e73;
+    line-height: 1.8;
+    font-size: 0.97rem;
+}
+
+.sobre-destaque {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    padding: 20px 8% 80px;
+}
+
+.caixa-destaque {
+    border-radius: 24px;
+    padding: 38px 30px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clara {
+    background-color: #f5f5f7;
+}
+
+.escura {
+    background-color: #1d1d1f;
+}
+
+.caixa-destaque h2 {
+    font-size: 1.9rem;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.clara h2 {
+    color: #1d1d1f;
+}
+
+.escura h2 {
+    color: #ffffff;
+}
+
+.caixa-destaque p {
+    font-size: 0.97rem;
+    line-height: 1.8;
+}
+
+.clara p {
+    color: #6e6e73;
+}
+
+.escura p {
+    color: #d2d2d7;
+}
+
+.mini-claro {
+    color: #7db8ff;
+}
+
+@media (max-width: 768px) {
+    .sobre-hero {
+        min-height: 50vh;
+        padding: 60px 6%;
+    }
+
+    .sobre-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .sobre-hero p:last-child {
+        font-size: 0.98rem;
+    }
+
+    .caixa-destaque h2 {
+        font-size: 1.5rem;
+    }
+}
+.extra-sobre {
+    text-align: center;
+    padding: 0 8% 70px;
+}
+
+#textoExtraSobre {
+    display: none;
+    margin-top: 20px;
+    color: #6e6e73;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}

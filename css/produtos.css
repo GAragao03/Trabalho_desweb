@@ -1,0 +1,91 @@
+/* TÍTULO */
+.titulo {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    color: #6e6e73;
+    font-size: 0.95rem;
+}
+
+/* GRID */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px 8%;
+}
+
+/* CARD */
+.produto-item {
+    text-align: center;
+}
+
+.produto-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.produto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* OVERLAY */
+.produto-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.produto-card::after {
+    content: attr(data-nome) "\A\A" attr(data-info);
+    white-space: pre-line;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.produto-card:hover::before,
+.produto-card:hover::after {
+    opacity: 1;
+}
+
+/* IMAGEM */
+.imagem-produto {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 20px;
+    background: white;
+}
+
+/* NOME */
+.nome-produto {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #1d1d1f;
+}

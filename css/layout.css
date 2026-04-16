@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/* MENU */
+header {
+    padding: 0.85rem 0;
+}
+
+.menu {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(245, 245, 247, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #dcdce1;
+}
+
+.layout {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+}
+
+.logo {
+    width: 1.1rem;
+    height: 1.4rem;
+    object-fit: contain;
+}
+
+li a {
+    text-decoration: none;
+    color: #1d1d1f;
+    font-weight: 500;
+    transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+li a:hover {
+    color: #0066cc;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+.mac {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.2rem 1.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+/* SEÇÕES */
+.conteineriphones,
+.conteinermacbook,
+.conteinerdesk,
+.conteinermoni,
+.conteineripad,
+.conteineripod {
+    padding-bottom: 3.5rem;
+}
+
+.conteineriphones,
+.conteinerdesk,
+.conteineripad {
+    background: linear-gradient(180deg, #fbfbfd 0%, #f2f2f7 100%);
+}
+
+.conteinermacbook,
+.conteinermoni,
+.conteineripod {
+    background: linear-gradient(180deg, #e9e9ee 0%, #dcdce2 100%);
+}
+
+.conteinermacbook,
+.conteinermoni,
+.conteineripod {
+    border-radius: 28px;
+    width: min(95%, 1280px);
+    margin: 0 auto 2rem;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.conteineriphones,
+.conteinerdesk,
+.conteineripad {
+    width: min(95%, 1280px);
+    margin: 0 auto 2rem;
+}
+
+/* GRIDS */
+.iphones,
+.macposi,
+.desktop,
+.display,
+.ipad,
+.ipod {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.iphones {
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+}
+
+.macposi,
+.desktop,
+.display,
+.ipod {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.ipad {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* CARDS */
+.iphones section,
+.macposi section,
+.desktop section,
+.display section,
+.ipad section,
+.ipod section {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 24px;
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.iphones section:hover,
+.macposi section:hover,
+.desktop section:hover,
+.display section:hover,
+.ipad section:hover,
+.ipod section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.09);
+}
+
+.legenda,
+.legenda1,
+.legenda2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    min-height: 100%;
+    padding-top: 0;
+}
+
+.legenda small,
+.legenda1 small,
+.legenda2 small {
+    color: #6e6e73;
+    font-weight: 400;
+}
+
+/* IMAGENS DOS PRODUTOS */
+.logocelulares {
+    width: 120px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.logomac,
+.logomac1 {
+    width: 250px;
+    height: 170px;
+    object-fit: contain;
+    background: transparent;
+    border-radius: 18px;
+}
+
+.logomac2 {
+    width: 140px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.logomac3 {
+    width: 145px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.ipad1,
+.ipad2,
+.ipad3 {
+    width: 150px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.ipod1,
+.ipod2 {
+    width: 180px;
+    height: 170px;
+    object-fit: contain;
+    background: transparent;
+    padding: 0;
+    border-radius: 18px;
+}
+
+.logomacair {
+    width: 260px;
+    height: 180px;
+    object-fit: contain;
+    background: transparent;
+}
+
+/* RODAPÉ */
+.rodape {
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    background: #f5f5f7;
+    border-top: 1px solid #d2d2d7;
+    text-align: center;
+    font-size: 0.82rem;
+    color: #6e6e73;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .layout {
+        gap: 1rem;
+        padding: 0 1rem;
+        font-size: 0.88rem;
+    }
+
+    .mac {
+        font-size: 1.6rem;
+        padding-top: 2.4rem;
+    }
+
+    .iphones,
+    .macposi,
+    .desktop,
+    .display,
+    .ipad,
+    .ipod {
+        padding-top: 1.8rem;
+        gap: 1rem;
+    }
+
+    .iphones section,
+    .macposi section,
+    .desktop section,
+    .display section,
+    .ipad section,
+    .ipod section {
+        min-height: 230px;
+        border-radius: 20px;
+    }
+
+    .logomac,
+    .logomac1,
+    .logomacair {
+        width: 210px;
+        height: 145px;
+    }
+
+    .logocelulares {
+        width: 100px;
+        height: 145px;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout {
+        gap: 0.8rem 1rem;
+    }
+
+    .mac {
+        font-size: 1.4rem;
+    }
+
+    .iphones {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .macposi,
+    .desktop,
+    .display,
+    .ipad,
+    .ipod {
+        grid-template-columns: 1fr;
+    }
+}
+.titulo {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    color: #6e6e73;
+    font-size: 0.95rem;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px 8%;
+}
+
+.produto-item {
+    text-align: center;
+}
+
+.produto-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.produto-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.produto-card::after {
+    content: attr(data-nome) "\A\A" attr(data-info);
+    white-space: pre-line;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.produto-card:hover::before,
+.produto-card:hover::after {
+    opacity: 1;
+}
+
+.imagem-produto {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 20px;
+    background: white;
+}
+
+.botao-principal {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background-color: #0071e3;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    background-color: #005bb5;
+}
